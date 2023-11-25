@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OH.STUDIO</title>
+    <link rel="shortcut icon" href="favicon.ico.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/Css/style.css">
+</head>
+
+<body>
+    <div class="loader"></div>
+  <div class="content hidden">
+    <div class="navigation">
+        <div class="nav-bar">
+            <a href="index.html" class="nav-btn  h-btn">
+                Home
+            </a>
+            <a href="profile.html" class="nav-btn  p-btn">
+                Profile
+            </a>
+            <a href="contact.html" class="nav-btn  c-btn">
+                Contact
+            </a>
+        </div>
+    </div>
+    <div class="hero-box">
+        <div class="hero-para">
+            <h1>A brand and product designer working with clients globally</h1>
+        </div>
+        <div class="hero-nav">
+            <a href="" class="h-nav-btn" style="background-color: white;">
+                Experties
+            </a>
+            <a href="" class="h-nav-btn">
+                Branding
+            </a>
+            <a href="" class="h-nav-btn">
+                Product
+            </a>
+            <a href="" class="h-nav-btn">
+                Desgin System
+            </a>
+        </div>
+    </div>
+    <div class="images">
+        <div class="img img1"><img src="assets/images/square-ph.jpg" class="imgg1"></div>
+        <div class="img img2"><img src="assets/images/square-ph.jpg" class="imgg1"></div>
+        <div class="img img3"><img src="assets/images/square-ph.jpg" class="imgg1"></div>
+        <div class="img img4"><img src="assets/images/square-ph.jpg" class="imgg1"></div>
+        <div class="img img5"><img src="assets/images/square-ph.jpg" class="imgg1"></div>
+        <div class="img img6"><img src="assets/images/square-ph.jpg" class="imgg1"></div>
+        <div class="img img7"><img src="assets/images/square-ph.jpg" class="imgg1"></div>
+        <div class="img img8"><img src="assets/images/square-ph.jpg" class="imgg1"></div>
+        <div class="img img9"><img src="assets/images/square-ph.jpg" class="imgg1"></div>
+        <div class="img img10"><img src="assets/images/square-ph.jpg" class="imgg1"></div>
+        <div class="img img11"><img src="assets/images/square-ph.jpg" class="imgg1"></div>
+        <div class="img img12"><img src="assets/images/square-ph.jpg" class="imgg1"></div>
+    </div>
+    <div class="letswt section">
+        <p>Let's work together.</p>
+        <a href="contact.html" class="getint">Get in touch.</a>
+    </div>
+    <div class="footer">
+        
+        <div class="f-box f1-box ">
+            <img src="favicon.ico.jpg" class="fim" alt="">
+            <p class="cr">©️Husain ali 2023</p>
+        </div>
+        <div class="f-box f-social ">
+            <a href="" class="f-social-a">Instagram</a>
+
+            <a href="" class="f-social-a">Facebook</a>
+
+            <a href="" class="f-social-a">Twitter</a>
+        </div>
+        
+    </div>
+    <button>
+        <img src="./favicon.ico.jpg" width="15px" alt="">
+        <a href="" class="shop">Shop</a>
+    </button>
+    
+</div>
+
+
+
+
+
+    <script>
+        // JS to remove 'hidden' class after a delay (simulating page load)
+        window.onload = function() {
+          const content = document.querySelector('.content');
+          content.classList.remove('hidden');
+        };
+
+        window.addEventListener('load', function() {
+  document.body.classList.add('loaded');
+});
+
+
+const sections = document.querySelectorAll('.section');
+
+const sectionObserver = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+});
+
+sections.forEach(section => {
+  sectionObserver.observe(section);
+});
+
+
+      </script>
+</body>
+
+</html>

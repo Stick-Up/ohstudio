@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    margin-bottom: 100px;
+
+    
+}
+@media (min-width:320px) and (max-width:620px) {
+    .navigation{
+       margin-bottom: 60px;
+    }   
+   }
+   
+
+.nav-bar {
+    border-radius: 100px;
+    backdrop-filter: blur(16px);
+    background-color: rgba(232, 229, 228, 0.5);
+    margin-top: 30px;
+    padding: 5px;
+    display: flex;
+    gap: 10px;
+    margin-top: 130px;
+    margin-bottom: 20px;
+    position: fixed;
+    opacity: 1;
+    z-index: 1;
+}
+
+.nav-btn {
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 26px;
+    border-radius: 100px;
+}
+
+.h-btn {
+    background-color: white;
+}
+
+.hero-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 51px;
+}
+
+.hero-para {
+    font-size: 2.5vw;
+    font-family: sans-serif;
+    width: 60%;
+    margin: 90px 0 30px 0;
+    text-align: center;
+    line-height: 90px;
+    font-weight: lighter;
+
+}
+@media (min-width:320px) and (max-width:620px) {
+ .hero-para{
+    font-size: 4vw;
+    line-height: 40px;
+    width: 85%;
+ }   
+}
+
+.hero-nav {
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+}
+/* @media (min-width:320px) and (max-width:620px) {
+    .hero-nav{
+      
+    }   
+   } */
+
+.h-nav-btn {
+    background-color: rgba(232, 229, 228, 0.5);
+    text-decoration: none;
+    color: black;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 100px;
+    font-family: sans-serif;
+    font-size: 1vw;
+}
+@media (min-width:320px) and (max-width:620px) {
+    .h-nav-btn{
+       font-size: 3vw;
+    
+    }   
+   }
+.letswt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    font-family: sans-serif;
+    font-size: 2.5vw;
+    font-weight: 600;
+    
+}
+@media (min-width:320px) and (max-width:620px) {
+    .letswt{
+       font-size: 8vw;
+       padding: 10px;
+       margin: 90px 0 90px 0;
+    }   
+   }
+   
+.getint {
+    color: grey;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 3vw;
+    font-weight: 500;
+
+}
+@media (min-width:320px) and (max-width:620px) {
+    .getint{
+       font-size: 8vw;
+       
+    }   
+   }
+   
+
+.getint:hover {
+    color: rgba(180, 175, 174, 0.5);
+    font-weight: 500;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+@media (min-width:320px) and (max-width:620px) {
+    .footer{
+       display: flex;
+       flex-direction: column;
+       
+    }   
+   }
+
+.f1-box {
+    display: flex;
+    align-items: center;
+}
+@media (min-width:320px) and (max-width:620px) {
+    .f1-box{
+        display: block;
+        margin: auto;
+    }   
+   }
+   @media (min-width:320px) and (max-width:620px) {
+    .cr{
+       margin: auto;
+       margin: 10px 0 10px 0;
+    }   
+   }
+
+.f2-box:hover {
+    cursor: pointer;
+}
+
+.f-social {
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+@media (min-width:320px) and (max-width:620px) {
+    .f-social{
+        display: flex;
+       justify-content: center;
+       font-size: 6vw;
+       
+    }   
+   }
+   @media (min-width:320px) and (max-width:620px) {
+    .fim{
+        margin: 0 40%;
+       
+    }   
+   }
+
+
+
+.f-social-a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+button {
+    background-color: black;
+border-radius: 100px;
+padding: 10px 20px ;
+position: fixed;
+
+
+}
+
+.shop {
+    text-decoration: none;
+    color: white;
+    font-size: 2vw;
+}
+
+.images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    row-gap: 40px;
+   
+}
+@media (min-width:320px) and (max-width:620px) {
+    .images{
+       column-gap: 20px;
+       padding: 20px;
+    }   
+   }
+   
+.imgg1{
+    width:95%;
+    border-radius: 10px;
+    gap: 50px;
+    opacity: 1;
+filter: blur(0px);
+}
+@media (min-width:320px) and (max-width:620px) {
+    .imgg1{
+       width: 100%;
+    }   
+   }
+   
+.imgg1:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    filter: blur(8px);
+}
+/* Animation effect experiment */
+.content {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+  }
+  
+  /* Trigger the animation when the webpage is fully loaded */
+  body.loaded .content {
+    opacity: 1;
+  }
+  
+  /* Simulate the page load using the loaded class */
+  body:not(.loaded) .content {
+    opacity: 0;
+  }
+  
+  /* Loader animation styles (just for visual purposes) */
+  .loader {
+    /* Add loader styles here */
+  }
+
+
+  .section {
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+  }
+  
+  .section.visible {
+    opacity: 1;
+  }
+  
+  
+  
